@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+body {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: orange;
+    height: 100px;
+    /* C1:
+    text-align: center;
+    line-height: 100px; */
+
+    /* C2:
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    display: flex;
+}
+
+h3 {
+    margin: auto;
+    position: relative;
+}
+
+h3::after {
+    position: absolute;
+    left: -10px;
+    content: "";
+    border-left: 3px solid #333;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
