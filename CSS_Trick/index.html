@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./center.css">
+    <!-- <link rel="stylesheet" href="./center.css"> -->
+    <link rel="stylesheet" href="./button.css">
+    <link rel="stylesheet" href="./toast.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>  
-    <div class="box">
-        <h3>CENTER ME</h3>
+<body>
+    <div id="toast">
+        </div>
+    </div>  
+    
+    <div>
+        <button onclick="showSuccessToast()" class="btn btn--success">Show success toast</button>    
+        <button onclick="showErrorToast()" class="btn btn--error">Show error toast</button>  
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
